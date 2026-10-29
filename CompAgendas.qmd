@@ -1,0 +1,52 @@
+---
+title: "Party Platform Comparison: USA, UK, Germany"
+author: Edward Blaha
+format:
+  html: default
+  pdf: default
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| include: false
+source("/Users/edwardblaha/DataWrangling/Week9/DataWranglingWeek9/CompAgendas.R")
+```
+
+## Figure 1
+
+To make this figure, I combined the party platforms of major parties in Germany, the United Kingdom, and the United States, and determined the proportion of policy statements that concerned different categories of policy. The foreign policy and defense category includes statements on defense, international affairs, and foreign trade. The United States Democratic and Republican Party platforms consistently contain a greater share of foreign policy and defense related statements, but this share has declined since the 1950s.
+
+```{r}
+ForeignPlot
+```
+
+## Figure 2
+
+Social policy includes policy statements coded as related to health, education, social welfare, housing, and culture.
+
+```{r}
+SocialPlot
+```
+
+## Figure 3
+
+Figure three demonstrates that in the 2010s, Germany and the UK's political parties emphasize social policy and the economy more than the United States does as a proportion of their party platforms, while the US emphasized Foreign Policy and Defense more.
+
+**Foreign Policy & Defense:** defense, international affairs, foreign trade
+
+**Social Policy:** health, education, social welfare, housing, culture
+
+**Economy:** macroeconomics, labor, domestic commerce, agriculture, transportation, technology Crime & Immigration: law and crime, immigration
+
+**Environment & Energy:** environment, energy, public lands
+
+Civil rights and government operations were not included in any group.
+
+```{r}
+#| fig-width: 14
+#| fig-height: 7
+RecentPlot
+```
